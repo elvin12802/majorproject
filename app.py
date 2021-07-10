@@ -1,6 +1,8 @@
+import os
+api_key = os.environ.get("API_KEY")
 !pip install adafruit-io --quiet
 from Adafruit_IO import Client
-aio = Client('ElvinE', 'aio_BZlX57eFTFxwMVIyoJE5lvhTnJxt')
+aio = Client('ElvinE', 'api_key')
 !pip install python-telegram-bot==13.0 --quiet
 from telegram.ext import Updater, MessageHandler,Filters
 
