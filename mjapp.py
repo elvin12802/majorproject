@@ -1,9 +1,7 @@
 import os
-api = os.getenv('API_KEY')
+api = os.getenv('ADAFRUIT_IO_KEY')
 from Adafruit_IO import Client
-aio = Client('ElvinE' , 'api')
-feeds = aio.feeds()
-print(feeds)
+aio = Client('ElvinE' , 'ADAFRUIT_IO_KEY')
 from telegram.ext import Updater, MessageHandler,Filters
 
 def lighton(bot,update):
