@@ -1,5 +1,5 @@
 import os
-import adafruit-io 
+import Adafruit_io 
 API_KEY = os.getenv('API_KEY')
 from Adafruit_IO import Client
 aio = Client('ElvinE', 'API_KEY')
