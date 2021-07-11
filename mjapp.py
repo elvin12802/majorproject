@@ -1,5 +1,5 @@
 import os
-api_key = os.environ.get("API_KEY")
+api_key = os.getenv("API_KEY")
 from Adafruit_IO import Client
 aio = Client('ElvinE', 'api_key')
 from telegram.ext import Updater, MessageHandler,Filters
