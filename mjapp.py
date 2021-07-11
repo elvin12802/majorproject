@@ -3,7 +3,7 @@ pip install adafruit-io --quiet
 API_KEY = os.getenv('API_KEY')
 from Adafruit_IO import Client
 aio = Client('ElvinE', 'API_KEY')
-!pip install python-telegram-bot==13.0 --quiet
+pip install python-telegram-bot==13.0 --quiet
 from telegram.ext import Updater, MessageHandler,Filters
 
 def lighton(bot,update):
